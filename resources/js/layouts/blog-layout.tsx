@@ -35,7 +35,7 @@ export default function BlogLayout({
                             <span className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
                                 Simple Blog
                             </span>
-                            <span className="hidden text-xs text-zinc-500 sm:inline-block sm:ml-2 dark:text-zinc-400">
+                            <span className="hidden text-xs text-zinc-500 sm:ml-2 sm:inline-block dark:text-zinc-400">
                                 Powered by Laravel 13 & React
                             </span>
                         </div>
@@ -56,9 +56,7 @@ export default function BlogLayout({
             <div className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 sm:py-12">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
                     {/* Main Content Area */}
-                    <main className="min-w-0 lg:col-span-8">
-                        {children}
-                    </main>
+                    <main className="min-w-0 lg:col-span-8">{children}</main>
 
                     {/* Sidebar */}
                     <aside className="lg:col-span-4">
@@ -66,7 +64,7 @@ export default function BlogLayout({
                             {/* Categories Card */}
                             <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
                                 <div className="mb-4 flex items-center justify-between border-b border-zinc-100 pb-3 dark:border-zinc-800">
-                                    <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-900 dark:text-zinc-100">
+                                    <h2 className="text-sm font-semibold tracking-wider text-zinc-900 uppercase dark:text-zinc-100">
                                         Categories
                                     </h2>
                                     <span className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -85,7 +83,9 @@ export default function BlogLayout({
                                             }`}
                                         >
                                             <span className="flex items-center gap-2">
-                                                <span className="text-base">✦</span>
+                                                <span className="text-base">
+                                                    ✦
+                                                </span>
                                                 <span>All Categories</span>
                                             </span>
                                             <span
@@ -150,8 +150,9 @@ export default function BlogLayout({
                                 </h3>
                                 <p className="leading-relaxed">
                                     A minimalist blog built with Laravel 13,
-                                    SQLite, Inertia.js v3, React 19, and Tailwind CSS.
-                                    Explore topics by selecting categories above.
+                                    SQLite, Inertia.js v3, React 19, and
+                                    Tailwind CSS. Explore topics by selecting
+                                    categories above.
                                 </p>
                             </div>
                         </div>

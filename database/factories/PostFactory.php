@@ -26,7 +26,7 @@ class PostFactory extends Factory
             'title' => $title,
             'slug' => Str::slug($title),
             'excerpt' => fake()->paragraph(2),
-            'body' => implode("\n\n", fake()->paragraphs(5)),
+            'body' => fake()->paragraphs(5, true),
         ];
     }
 }
